@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "target": "ES2020",
+    "outDir": "./dist/src",
+    "rootDir": "src",
+    "importsNotUsedAsValues": "error",
+    "typeRoots" : ["../task-4", "./node_modules/@types"]
+
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+}

@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "c9755997-6f7f-4f95-ad8b-5b6520d4c34b",
+		"name": "task-4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "song",
+			"item": [
+				{
+					"name": "all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pa2FAbWlrYS5jb20iLCJpYXQiOjE2MzA0MjMwOTEsImV4cCI6MTYzMDQzMDI5MX0.MdAKQFi9E5mAxc5_mNy5PW0PVRQKd8U90fii3Ndoh5s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1a2EiLCJpYXQiOjE2MzA0MDM2MDIsImV4cCI6MTYzMDQxMDgwMn0.6F_Hxg5yMqopSTyJtHuE77c83QmPuumor2Or2XRu040",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/song/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"song",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pa2FAbWlrYS5jb20iLCJpYXQiOjE2MzA0MjMwOTEsImV4cCI6MTYzMDQzMDI5MX0.MdAKQFi9E5mAxc5_mNy5PW0PVRQKd8U90fii3Ndoh5s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/song/9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"song",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/song",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"song"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcmljQG1pa2EuY29tIiwiaWF0IjoxNjMwNDIzMTI2LCJleHAiOjE2MzA0MzAzMjZ9.Me4quxdvXc3Eoip2lLss0wzF_amRVs7I3519qaJrK0o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "sasa",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Luka Grujić/Downloads/SASA KOVACEVIC - Temperatura (official video) 2016.mp3"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/song/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"song",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "cvija2",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Luka Grujić/Downloads/CVIJA X TEODORA - NOKAUT (OFFICIAL VIDEO).mp3"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/song",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"song"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pa2FAbWlrYS5jb20iLCJpYXQiOjE2MzA0MTQ3MTgsImV4cCI6MTYzMDQyMTkxOH0.TMpqPEUk5uSIlU8w4h8IH6qZ3PadqsCauWVwttLgnkQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/song/9/like",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"song",
+								"9",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dislike",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pa2FAbWlrYS5jb20iLCJpYXQiOjE2MzA0MTQ3MTgsImV4cCI6MTYzMDQyMTkxOH0.TMpqPEUk5uSIlU8w4h8IH6qZ3PadqsCauWVwttLgnkQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/song/9/like",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"song",
+								"9",
+								"like"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"luka\",\r\n    \"email\": \"luka@mika.com\",\r\n    \"password\": \"123\",\r\n    \"admin\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mika@mika.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
