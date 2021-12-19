@@ -98,4 +98,4 @@ Create a REST API for music library application. Application has 2 type of users
 **Directions**
 
 - Task should be completed using [ExpressJS](https://expressjs.com/), [Typescript](https://www.typescriptlang.org/) and [MongoDB](https://www.mongodb.com/) as a database.
-- It is not required for the API to be secure. This means that users do not need to login to access the API resources (everything is public), but it will be highly appreciated if good security mechanism is provided.
+- Required for the API to be secure. 
